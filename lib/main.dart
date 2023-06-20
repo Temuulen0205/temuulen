@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/flex_screen.dart';
 import 'dart:math' as Math ;
 import 'text_layout.dart';
 
@@ -11,51 +12,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("My first app"),
-        ),
-        drawer: Drawer(
-          child: Container(
-            color: Colors.grey,
-          )
-        ),
-       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children:[
-      //     AspectRatio(
-      //     aspectRatio: 1.0,
-      //     child: Container(
-      //       color: Colors.green,
-      //       padding: EdgeInsets.all(40),
-      //       child: Transform.rotate(
-      //         angle: 180/Math.pi,
-      //         child: Container(
-      //           width: 250,
-      //           height: 250,
-      //           decoration: BoxDecoration(
-      //             color: Colors.purple,
-      //             boxShadow: [
-      //               BoxShadow(
-      //                 color: Colors.deepPurple.withAlpha(120),
-      //                 spreadRadius: 4,
-      //                 blurRadius: 15,
-      //                 offset: Offset.fromDirection(1.0 , 30),
-      //               ),
-      //             ],
-      //             borderRadius: BorderRadius.all(Radius.circular(20)),
-      //           ),
-      //           padding: EdgeInsets.all(40),
-      //           child: _buildShynyCircle(),
-      //               ),
-      //       ),
-      //  ),
-      // ),
-      Image.asset('asset/log_out.jpg'),
-      TestLayout(),
-       ]
-     ),
-      )
+      home: Flexscreen()
     );
   }
 }
